@@ -1,0 +1,25 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: pip install --user JECryptography
+          name: install JECryptography
+      - run:
+          command: python Test/Test.py
+          name: Test
+      - run:
+          command: python Test/UnitTest.py
+          name: UnitTest
+
+
+workflows:
+  main:
+    jobs:
+      - build-and-test

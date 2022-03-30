@@ -1,0 +1,6 @@
+requests
+je_taiwan_open_data_core
+je_database
+je_log_system
+je_websocket
+apscheduler

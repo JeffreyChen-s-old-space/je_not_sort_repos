@@ -1,0 +1,115 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: pip install --user JELogSystem
+          name: pip JELogSystem
+      - run:
+          command: pip install --user JEGmail
+          name: pip JEGmail
+      - run:
+          command: pip install --user JEDatabase
+          name: pip JELogSystem
+      - run:
+          command: pip install --user JEVerificationCode
+          name: pip JEVerificationCode
+      - run:
+          command: pip install --user JECryptography
+          name: pip JECryptography
+      - run:
+          command: pip install --user JEWebSocket
+          name: pip JEWebSocket
+      - run:
+          command: pip install --user JERestfulAPI
+          name: pip JERestfulAPI
+
+      - run:
+          command: pip install --user flask
+          name: pip flask
+      - run:
+          command: pip install --user flask-cors
+          name: pip flask-cors
+      - run:
+          command: pip install --user Pillow
+          name: pip Pillow
+      - run:
+          command: pip install --user Numpy
+          name: pip Numpy
+      - run:
+          command: pip install --user matplotlib
+          name: pip matplotlib
+      - run:
+          command: pip install --user google-api-python-client
+          name: pip google-api-python-client
+      - run:
+          command: pip install --user google-auth-httplib2
+          name: pip google-auth-httplib2
+      - run:
+          command: pip install --user google-auth-oauthlib
+          name: pip google-auth-oauthlib
+      - run:
+          command: pip install --user websockets
+          name: pip websockets
+
+      - run:
+          command: python Project/NKNUSystemBackend/Tests/CryptographyTest/Test.py
+          name: CryptographyTest Test.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/CryptographyTest/UnitTest.py
+          name: CryptographyTest UnitTest.py
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/CryptographyTest/Test.py
+          name: CryptographyTest Test.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/CryptographyTest/UnitTest.py
+          name: CryptographyTest UnitTest.py
+
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/GmailTest/UnitTest.py
+          name: GmailTest UnitTest.py
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/LogSystemTest/Test.py
+          name: LogSystemTest Test.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/LogSystemTest/UnitTest.py
+          name: LogSystemTest UnitTest.py
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/VerificationCodeTest/Test.py
+          name: VerificationCodeTest Test.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/VerificationCodeTest/UnitTest.py
+          name: VerificationCodeTest UnitTest.py
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/WebSocketTest/ServerUnitTest.py
+          name: WebSocketTest ServerUnitTest.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/WebSocketTest/ClientUnitTest.py
+          name: WebSocketTest ClientUnitTest.py
+
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/DatabaseTest/CreateTestDatabase.py
+          name: DatabaseTest CreateTestDatabase.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/DatabaseTest/TestControl.py
+          name: DatabaseTest TestControl.py
+      - run:
+          command: python  Project/NKNUSystemBackend/Tests/DatabaseTest/UnitTest.py
+          name: DatabaseTest UnitTest.py
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build-and-test

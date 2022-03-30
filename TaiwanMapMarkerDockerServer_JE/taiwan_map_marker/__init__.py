@@ -1,0 +1,1 @@
+from taiwan_map_marker import resource

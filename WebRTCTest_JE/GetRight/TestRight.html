@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetInfo</title>
+</head>
+<body>
+<script>
+    const constraints = {
+        audio: true,
+        video: true
+    };
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(function(stream) {
+            alert("取得成功")
+        })
+    .catch(function(error) {
+        alert("取得失敗")
+        console.log(error)
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\bin\Debug\Webbrowser.exe.config
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\bin\Debug\Webbrowser.exe
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\bin\Debug\Webbrowser.pdb
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.csprojAssemblyReference.cache
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.Properties.Resources.resources
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.csproj.GenerateResource.cache
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.exe
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.pdb
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.csproj.CoreCompileInputs.cache
+D:\!1All Project And WorkSpace\VS系列\Visual Studio Working Space\C#\Webbrowser\Webbrowser\obj\Debug\Webbrowser.WebForm.resources

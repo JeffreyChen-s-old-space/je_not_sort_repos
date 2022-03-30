@@ -1,0 +1,4 @@
+je_matplotlib_wrapper_dev
+matplotlib
+wheel
+twine

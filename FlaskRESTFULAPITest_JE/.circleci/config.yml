@@ -1,0 +1,27 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: pip install --user Flask
+          name: pip Flask
+      - run:
+          command: pip install --user Flask-Cors
+          name: pip Flask-Cors
+      - run:
+          command: pip install --user JERestfulAPI
+          name: pip JERestfulAPI
+      - run:
+          command: python Test/UnitTest.py
+          name: UnitTest
+
+workflows:
+  main:
+    jobs:
+      - build-and-test

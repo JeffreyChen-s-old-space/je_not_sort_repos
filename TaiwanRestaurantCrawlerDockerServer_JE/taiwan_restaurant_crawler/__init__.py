@@ -1,0 +1,1 @@
+from taiwan_restaurant_crawler import resource

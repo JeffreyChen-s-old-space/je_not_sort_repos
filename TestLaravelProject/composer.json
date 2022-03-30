@@ -1,0 +1,15 @@
+{
+  "name": "je_chen/unit_test",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "JE-Chen",
+      "email": "zenmailman@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/installer": "v1.5.0"
+  }
+}
