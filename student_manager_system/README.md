@@ -11,7 +11,7 @@
 * Lesson 課程
 * Login 登入用
 * Manager 管理員
-### NKNUSystemBackend
+### SystemBackend
 #### database
 * database source
 #### Gmail
