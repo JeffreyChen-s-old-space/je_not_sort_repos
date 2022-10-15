@@ -1,104 +1,43 @@
 import java.util.Scanner;
 
+// main class 主類別 只包含main 讀取測資及輸出答案
 public class A410877027_3_1 {
 
     public static void main(String[] argv) {
         // 掃描測資用
         Scanner dataScanner = new Scanner(System.in);
-        // 地圖的x大小
-        int mapSizeX = dataScanner.nextInt();
-        // 地圖的y大小
-        int mapSizeY = dataScanner.nextInt();
-        // 檢查地圖 (有機器人遺失過就能正常走)
-        boolean[][] mapCheck = new boolean[mapSizeX + 1][mapSizeY + 1];
-        // 掃描直到測資結束
+        // 讀取測資需要的變數
+        int left, right, height, max = Integer.MIN_VALUE, min = Integer.MAX_VALUE;
+        // 最多 10000個
+        int[] buildingHeight = new int[10001];
+        // 讀取直到沒測資
         while (dataScanner.hasNext()) {
-            // 判斷機器人是否遺失
-            boolean isRobotLost = false;
-            // 現在機器人位置x
-            int robotCurrentX = dataScanner.nextInt();
-            // 現在機器人位置y
-            int robotCurrentY = dataScanner.nextInt();
-            // 現在方向
-            String nowRobotDirection = dataScanner.next();
-            // 機器人指令
-            String robotCommand = dataScanner.next();
-            // 讀取全部指令
-            for (int index = 0; index < robotCommand.length(); index++) {
-                switch (robotCommand.charAt(index)) {
-                    // 前進指令 不改變方向 改變座標
-                    case 'F':
-                        int tempX = robotCurrentX;
-                        int tempY = robotCurrentY;
-                        switch (nowRobotDirection) {
-                            case "N":
-                                tempY++;
-                                break;
-                            case "S":
-                                tempY--;
-                                break;
-                            case "W":
-                                tempX--;
-                                break;
-                            case "E":
-                                tempX++;
-                                break;
-                        }
-                        //如果超出地圖範圍則遺失
-                        if (tempX < 0 || tempY < 0 || tempX > mapSizeX || tempY > mapSizeY) {
-                            if (!mapCheck[robotCurrentX][robotCurrentY]) {
-                                //遺失之後改變路徑為可走
-                                mapCheck[robotCurrentX][robotCurrentY] = true;
-                                //印出遺失位置
-                                System.out.println(robotCurrentX + " " + robotCurrentY + " " + nowRobotDirection + " LOST");
-                                //遺失標籤為真
-                                isRobotLost = true;
-                                break;
-                            }
-                        } else {//否則改變座標
-                            robotCurrentX = tempX;
-                            robotCurrentY = tempY;
-                        }
-                        break;
-                    //右轉 只改變方向
-                    case 'R':
-                        switch (nowRobotDirection) {
-                            case "N":
-                                nowRobotDirection = "E";
-                                break;
-                            case "S":
-                                nowRobotDirection = "W";
-                                break;
-                            case "W":
-                                nowRobotDirection = "N";
-                                break;
-                            case "E":
-                                nowRobotDirection = "S";
-                                break;
-                        }
-                        break;
-                    //左轉 只改變方向
-                    case 'L':
-                        switch (nowRobotDirection) {
-                            case "N":
-                                nowRobotDirection = "W";
-                                break;
-                            case "S":
-                                nowRobotDirection = "E";
-                                break;
-                            case "W":
-                                nowRobotDirection = "S";
-                                break;
-                            case "E":
-                                nowRobotDirection = "N";
-                                break;
-                        }
-                        break;
-                }
-                // 如果都沒問題則印出位置跟方向
-                if (index == robotCommand.length() - 1 && !isRobotLost)
-                    System.out.println(robotCurrentX + " " + robotCurrentY + " " + nowRobotDirection);
+            // 讀左邊
+            left = dataScanner.nextInt();
+            // 讀高度
+            height = dataScanner.nextInt();
+            // 讀右邊
+            right = dataScanner.nextInt();
+            // 記錄每個最高高度
+            for (int buildingStart = left; buildingStart < right; buildingStart++) {
+                buildingHeight[buildingStart] = Math.max(buildingHeight[buildingStart], height);
+            }
+            // 左邊永遠保持最小
+            min = Math.min(left, min);
+            // 右邊保持最大
+            max  = Math.max(right, max);
+        }
+        // 現在的左邊
+        int current = buildingHeight[min];
+        // 輸出最左邊 及最左邊高度
+        System.out.print(min + " " + current);
+        // 由最左至最右 輸出比目前高的位置
+        for(int checkIndex = min; checkIndex <= max; checkIndex++){
+            if(buildingHeight[checkIndex] != current) {
+                current = buildingHeight[checkIndex];
+                System.out.print( " " + checkIndex + " " + current);
             }
         }
+        System.out.println();
     }
 }
