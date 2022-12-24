@@ -1,6 +1,6 @@
 package lab;
 
-public class lab3 {
+public class Lab3 {
 
     private static int binarySearchForSortedArray(int[] sortedArray, int target, int start, int end) {
         if (start < 0 || end >= sortedArray.length) {

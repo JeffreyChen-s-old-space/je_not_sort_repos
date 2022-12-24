@@ -1,6 +1,6 @@
 package lab;
 
-public class lab1 {
+public class Lab1 {
 
     public String checkTriangle(int a, int b, int c) {
         boolean c1, c2, c3;
