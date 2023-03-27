@@ -1,0 +1,1 @@
+from taiwan_hotel_crawler import resource
