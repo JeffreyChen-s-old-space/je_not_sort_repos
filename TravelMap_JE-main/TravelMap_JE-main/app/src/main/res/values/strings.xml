@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- App name and Map -->
+    <string name="app_name">Smart! 旅程規劃小幫手</string>
+    <string name="title_activity_marker_maps">Map</string>
+
+    <!-- Error -->
+    <string name="websocket_error">連線錯誤</string>
+    <string name="value_error">數值錯誤</string>
+
+    <!-- Reuse 重複使用區 -->
+    <string-array name="taiwan_locations">
+        <item>臺北市</item>
+        <item>新北市</item>
+        <item>桃園市</item>
+        <item>臺中市</item>
+        <item>臺南市</item>
+        <item>高雄市</item>
+        <item>基隆市</item>
+        <item>新竹市</item>
+        <item>嘉義市</item>
+        <item>新竹縣</item>
+        <item>苗栗縣</item>
+        <item>彰化縣</item>
+        <item>南投縣</item>
+        <item>雲林縣</item>
+        <item>嘉義縣</item>
+        <item>屏東縣</item>
+        <item>宜蘭縣</item>
+        <item>花蓮縣</item>
+        <item>臺東縣</item>
+        <item>澎湖縣</item>
+    </string-array>
+
+    <string name="Name">名稱</string>
+    <string name="Description">介紹</string>
+    <string name="Grade">評分</string>
+    <string name="Region">地區</string>
+    <string name="Town">鄉鎮區</string>
+    <string name="Add">地址</string>
+    <string name="Tel">電話</string>
+    <string name="Opentime">開放時間</string>
+    <string name="Website">網站</string>
+    <string name="Picture1">圖片一</string>
+    <string name="Picdescribe1">圖片一介紹</string>
+    <string name="Picture2">圖片二</string>
+    <string name="Picdescribe2">圖片二介紹</string>
+    <string name="Picture3">圖片三</string>
+    <string name="Picdescribe3">圖片三介紹</string>
+    <string name="Px">經度</string>
+    <string name="Py">緯度</string>
+    <string name="Serviceinfo">服務資訊</string>
+    <string name="Parkinginfo">停車資訊</string>
+    <string name="TotalNumberofRooms">房間總數</string>
+    <string name="LowestPrice">最低消費</string>
+    <string name="CeilingPrice">最高消費</string>
+    <string name="IndustryEmail">聯絡信箱</string>
+    <string name="TotalNumberofPeople">房間總共可容納人數</string>
+    <string name="AccessibilityRooms">無障礙房間</string>
+    <string name="PublicToilets">公共廁所數</string>
+    <string name="LiftingEquipment">無障礙設施</string>
+    <string name="ParkingSpace">停車空間</string>
+    <string name="Toldescribe">景點介紹</string>
+    <string name="Travellinginfo">旅行資訊</string>
+    <string name="Parkinginfo_Px">停車場經度</string>
+    <string name="Parkinginfo_Py">停車場緯度</string>
+    <string name="Ticketinfo">票價</string>
+    <string name="Remarks">標籤</string>
+    <string name="Keyword">關鍵字</string>
+
+
+    <!-- Main -->
+    <string name="weather_string">天氣</string>
+    <string name="attraction_string">景點</string>
+    <string name="hotel_string">旅館</string>
+    <string name="restaurant_string">餐廳</string>
+    <string name="map_string">地圖</string>
+    <string name="travel_string">行程</string>
+
+
+    <!-- Weather 天氣頁 -->
+    <string name="location_weather">地區天氣狀況</string>
+    <string name="hazard_weather">危險天氣狀況</string>
+
+    <!-- LocationWeather 地區天氣頁-->
+    <string name="number_of">第</string>
+    <string name="day_morning"> 天早晨</string>
+    <string name="day_night"> 天晚間</string>
+    <string name="high_temp">最高溫</string>
+    <string name="low_temp">最低溫</string>
+
+    <!-- hazard天氣頁 -->
+    <string name="no_hazard">沒有危險天氣</string>
+
+    <!-- Attractions 自訂景點頁 -->
+
+    <string name="add_marker_button">點此新增景點</string>
+    <string name="add_marker_get_data">點此自動取得目前經緯度</string>
+
+    <string name="add_marker_title_edittext">請點擊此輸入景點標題</string>
+    <string name="add_marker_snippet_edittext">請點擊此輸入景點描述</string>
+    <string name="add_marker_px_edittext">請點擊此輸入經度</string>
+    <string name="add_marker_py_edittext">請點擊此輸入緯度</string>
+
+    <string name="add_marker_title">景點標題</string>
+    <string name="add_marker_snippet">景點描述</string>
+    <string name="add_marker_px">景點經度</string>
+    <string name="add_marker_py">景點緯度</string>
+    <string name="add_marker_location">景點縣市</string>
+
+    <!-- 餐廳 -->
+
+    <string name="location_restaurant">搜尋區域的餐廳</string>
+
+    <!-- 旅館 -->
+
+    <string name="location_hotel">搜尋區域的旅館</string>
+
+    <!-- 景點 -->
+
+    <string name="location_attractions">搜尋區域的景點</string>
+
+    <!-- Map 主頁 -->
+    <string name="map_search">搜尋地圖</string>
+    <string name="map_navigation">地圖導航</string>
+    <string name="add_custom_marker">新增自訂景點</string>
+    <string name="watch_custom_marker">查看自訂景點</string>
+
+    <!-- Map 搜尋頁 -->
+    <string name="search_restaurant">搜尋附近餐廳</string>
+    <string name="search_hotel">搜尋附近旅館</string>
+    <string name="search_attractions">搜尋附近景點</string>
+    <string name="search_location">搜尋特定位置</string>
+
+    <string name="search_name">請點擊此輸入特定位置名稱</string>
+
+    <string name="street_view">顯示位置全景圖</string>
+
+    <string name="map_search_error">請勿輸入空白</string>
+
+    <!-- Map 導航頁 -->
+
+    <string name="start_navigation">開始導航</string>
+
+    <string name="navigation_location_name">請點擊此輸入導航位置名稱</string>
+
+    <string name="navigation_location_mode">選擇移動方式</string>
+    <string name="navigation_location_mode_d">自行駕駛</string>
+    <string name="navigation_location_mode_b">自行車</string>
+    <string name="navigation_location_mode_l">機車</string>
+    <string name="navigation_location_mode_w">步行</string>
+
+    <string name="navigation_location_avoid">避開特定路線</string>
+    <string name="navigation_location_avoid_t">避開需要通行費道路</string>
+    <string name="navigation_location_avoid_h">避開高速公路</string>
+    <string name="navigation_location_avoid_f">避開渡輪</string>
+
+
+</resources>

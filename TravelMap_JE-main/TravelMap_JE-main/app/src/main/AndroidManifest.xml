@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.je.datainnovationrace">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/smart_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smart_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DataInnovationRace">
+        <activity android:name=".layout.restaurant.SearchLocationRestaurantActivity"></activity>
+        <activity android:name=".layout.attractions.SearchLocationAttractionsActivity" />
+        <activity android:name=".layout.hotel.SearchLocationHotelActivity" />
+        <activity android:name=".layout.restaurant.RestaurantMainActivity" />
+        <activity android:name=".layout.hotel.HotelMainActivity" />
+        <activity android:name=".layout.weather.HazardWeatherActivity" />
+        <activity android:name=".layout.attractions.AddMarkerActivity" />
+        <activity android:name=".layout.map.MapSearchActivity" />
+        <activity android:name=".layout.attractions.MarkerMapsActivity" />
+        <activity android:name=".layout.place.FavoritesAttractionActivity" />
+        <activity android:name=".layout.travel.TravelPlanActivity" />
+        <activity android:name=".layout.travel.TravelPackingCheckListActivity" />
+        <activity android:name=".layout.place.PlaceInfoActivity" />
+        <activity android:name=".layout.attractions.RecommendAttractionActivity" />
+        <activity android:name=".layout.map.MapNavigationActivity" />
+        <activity android:name=".layout.weather.LocationWeatherActivity" />
+        <activity android:name=".layout.weather.WeatherMainActivity" />
+        <activity android:name=".layout.travel.TravelMainActivity" />
+        <activity android:name=".layout.map.MapMainActivity" />
+        <activity android:name=".layout.attractions.AttractionMainActivity" />
+        <activity android:name=".layout.main.MainLayout">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".layout.test.TestActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

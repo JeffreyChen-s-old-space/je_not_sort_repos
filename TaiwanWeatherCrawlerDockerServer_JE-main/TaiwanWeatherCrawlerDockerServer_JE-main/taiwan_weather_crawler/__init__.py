@@ -1,0 +1,1 @@
+from taiwan_weather_crawler import resource
