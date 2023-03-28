@@ -1,0 +1,3 @@
+D:/WorkSpaces/Program WorkSpace/C/Projects/C_Sockets_Client/cmake-build-debug/CMakeFiles/C_Sockets_Client.dir
+D:/WorkSpaces/Program WorkSpace/C/Projects/C_Sockets_Client/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/WorkSpaces/Program WorkSpace/C/Projects/C_Sockets_Client/cmake-build-debug/CMakeFiles/rebuild_cache.dir

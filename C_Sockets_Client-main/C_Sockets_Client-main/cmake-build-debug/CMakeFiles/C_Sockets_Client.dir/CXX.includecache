@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/WorkSpaces/Program WorkSpace/C/Projects/C_Sockets_Client/Socket_Client.cpp
+windows.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
+cstdio
+-
+thread
+-
+string
+-
+iostream
+-
+
