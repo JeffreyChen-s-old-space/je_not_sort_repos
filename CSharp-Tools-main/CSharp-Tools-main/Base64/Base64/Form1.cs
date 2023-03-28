@@ -1,0 +1,23 @@
+﻿using System;
+using System.Drawing.Imaging;
+using System.Windows.Forms;
+using Base64.Module;
+
+namespace Base64
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.Image = Base64Conversion.Base64ToImage(@"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
+");
+            if(button1.Image!=null)
+                Console.WriteLine(Base64Conversion.ImageToBase64(button1.Image,ImageFormat.Png));
+        }
+    }
+}

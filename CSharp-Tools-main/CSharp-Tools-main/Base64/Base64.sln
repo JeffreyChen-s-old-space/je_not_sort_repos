@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base64", "Base64\Base64.csproj", "{CC5A7ABF-85B9-4DFF-A4A6-6039D8163EFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC5A7ABF-85B9-4DFF-A4A6-6039D8163EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5A7ABF-85B9-4DFF-A4A6-6039D8163EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5A7ABF-85B9-4DFF-A4A6-6039D8163EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5A7ABF-85B9-4DFF-A4A6-6039D8163EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
