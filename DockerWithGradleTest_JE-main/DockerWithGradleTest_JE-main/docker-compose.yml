@@ -1,0 +1,8 @@
+version : '3.9'
+
+services:
+  compose_test:
+    build:
+      context: .
+      dockerfile: Dockerfile_compose_use
+    container_name: compose_yml_test

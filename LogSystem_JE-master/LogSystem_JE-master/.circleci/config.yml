@@ -1,0 +1,27 @@
+version: 2.1
+
+orbs:
+  python: circleci/python@1.2.1
+
+jobs:
+  build-and-test:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          command: pip install --user je_log_system
+          name: pip je_log_system
+      - run:
+          command: python test/test.py
+          name: Test
+      - run:
+          command: python test/test_json_read_setting.py
+          name: Test read json setting
+      - run:
+          command: python test/test_unittest.py
+          name: Unit test
+
+workflows:
+  main:
+    jobs:
+      - build-and-test

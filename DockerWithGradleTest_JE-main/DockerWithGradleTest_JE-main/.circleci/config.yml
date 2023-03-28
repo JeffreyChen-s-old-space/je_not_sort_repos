@@ -1,0 +1,29 @@
+version: 2.1
+
+orbs:
+  gradle: circleci/gradle@2.2.0
+
+jobs:
+  build-and-test:
+    executor:
+      name: gradle/default
+
+    steps:
+      - checkout
+      - run:
+          command: sudo chmod +x gradlew
+          name: Set permission
+      - run:
+          command: gradle wrapper
+          name: Gradle wrapper
+      - run:
+          command: ./gradlew assemble
+          name: Set gradle
+      - run:
+          command: gradle clean test -i
+          name: Run test
+
+workflows:
+  checkout-build-test:
+    jobs:
+      - build-and-test
